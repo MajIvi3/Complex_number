@@ -6,16 +6,16 @@
 close all
 
 % exponent
-naturlig = input('Give the value for n: ');
+naturlig = input('Give number of complex solutions for n: ');
 
 %complex number
 a = input('Give the value for a (real part): ');
 b = input('Give the value for b ( imaginary part): ');
 
-% finds the length
+% finds the absolute value
 r= sqrt(a.^2+b.^2);
 
-%finds the seal
+%finds the "phase"
 tetta = atan(b/a);
 
 % Adds pi whose number is less than 0
