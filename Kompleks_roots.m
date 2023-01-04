@@ -1,6 +1,6 @@
 
 %Script that print and plot the solutions of 
-% equations on the form z^n = a
+% equations on the form z^n = a + bi
 
 %Removes all items
 close all
@@ -9,8 +9,8 @@ close all
 naturlig = input('Give the value for n: ');
 
 %complex number
-a = input('Give the value for a: ');
-b = input('Give the value for b: ');
+a = input('Give the value for a (real part): ');
+b = input('Give the value for b ( imaginary part): ');
 
 % finds the length
 r= sqrt(a.^2+b.^2);
