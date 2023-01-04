@@ -9,3 +9,7 @@ Further program finds the absolute value and the phase, finds the solutions and 
 Exsample:
 
 ![](images/Complex%20number.png)
+
+The task used in the script:
+
+<img src="images/task.png" width="450" height="350">
