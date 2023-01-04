@@ -1,19 +1,24 @@
 
-%Skript som printer og plotter løsningene til 
-% %ligninger på formen z^n=a
+%Script that print and plot the solutions of 
+% equations on the form z^n = a
 
-%Fjerner alle figurer
+%Removes all items
 close all
-%eksponent
-naturlig = input('Gi verdien for n: ');
-%komplekstall
-a = input('Gi en real verdi a: ');
-b = input('Gi en verdi b: ');
-%finner lengden
+
+% exponent
+naturlig = input('Give the value for n: ');
+
+%complex number
+a = input('Give the value for a: ');
+b = input('Give the value for b: ');
+
+% finds the length
 r= sqrt(a.^2+b.^2);
-%finner tetta
+
+%finds the seal
 tetta = atan(b/a);
-% Legger pi hvis tall er mindre en 0
+
+% Adds pi whose number is less than 0
 if a < 0
     tetta =tetta+pi;
 end
@@ -21,7 +26,8 @@ end
 hold on
 grid on
 axis square
-%Finner og plotter løsninger
+
+%Finds and plots solutions
 for c = 0:naturlig -1
     z= r.^(1/naturlig).*exp(1i*(tetta+2*pi*c)/naturlig)
     plot(real(z),imag(z),'ro','linewidt',2)
